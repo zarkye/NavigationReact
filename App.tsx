@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "./src/screens/HomeScreen";
@@ -12,8 +11,6 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
-  const [message, setMessage] = useState("Mensagem inicial");
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
