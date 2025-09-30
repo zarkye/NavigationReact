@@ -5,7 +5,7 @@ import { AboutScreen } from "./src/screens/AboutScreen";
 
 export type RootStackParamList = {
   Home: undefined;
-  About: undefined;
+  About: {message : string};
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();

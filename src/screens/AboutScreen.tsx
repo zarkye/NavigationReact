@@ -1,10 +1,7 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 
-type Props = {
-  navigation: any;
-  message: string;
-};
+
 
 export function AboutScreen({ navigation, route }: any) {
     const { message } = route.params;
